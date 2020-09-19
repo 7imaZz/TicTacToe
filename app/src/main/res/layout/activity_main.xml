@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#D4D3D3">
+
+
+        <TextView
+            android:id="@+id/p1ScoreTV"
+            android:text="@string/player_1_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/comScoreTV"/>
+        <TextView
+            android:id="@+id/comScoreTV"
+            android:text="@string/com_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_above="@id/tl"/>
+
+
+
+        <TableLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <TableRow
+            tools:ignore="UselessParent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </TableRow>
+
+        <TableRow
+            tools:ignore="UselessParent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </TableRow>
+
+        <TableRow
+            tools:ignore="UselessParent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                tools:ignore="ButtonStyle"
+                android:layout_margin="8dp"
+                android:background="#FFF"
+                android:onClick="btnClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#040"
+        android:layout_below="@id/tl"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        android:text="@string/reset"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
